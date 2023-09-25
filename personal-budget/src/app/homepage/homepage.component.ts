@@ -1,8 +1,8 @@
 import { Component, AfterViewInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Chart } from 'chart.js/auto'; // Fixed the import here
+import { Chart } from 'chart.js/auto';
 import * as d3 from 'd3';
-import { DataService } from '../data.service'; // Added the service import
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'pb-homepage',
@@ -29,13 +29,13 @@ export class HomepageComponent implements AfterViewInit {
     labels: []
   };
 
-  public dataSource1: any = []; // Added for consistency
+  public dataSource1: any = [];
 
   public svg: any;
-  public margin = 20; // Kept as it was provided in your code
-  public width = 750; // Adjusted to match the provided code
-  public height = 500; // Adjusted to match the provided code
-  public radius = Math.min(this.width, this.height) / 2; // Adjusted to match the provided code
+  public margin = 20;
+  public width = 750;
+  public height = 500;
+  public radius = Math.min(this.width, this.height) / 2;
   public colors: any;
 
   constructor(private http: HttpClient, public dataService: DataService) { }

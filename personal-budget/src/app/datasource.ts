@@ -1,7 +1,7 @@
 export type Datasource = {
   datasets: [
     {
-      data: number[],        // Changed from string[] to number[] because budget values are numbers
+      data: number[],
       backgroundColor: string[],
     }
   ],
@@ -9,6 +9,6 @@ export type Datasource = {
 }
 
 export type Datasource1 = {
-  label: string,             // Changed "labels" to "label" for consistency
-  value: number              // Changed from string to number because budget values are numbers
+  label: string,
+  value: number
 }[]
