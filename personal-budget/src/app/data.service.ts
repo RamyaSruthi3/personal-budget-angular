@@ -13,8 +13,7 @@ export class DataService {
   private dataSource: Datasource = {
     datasets: [
       {
-        data: [],
-        backgroundColor: ["#ffcd56", "#ff6384", "#36a2eb", "#fd6b19", "#83FF33", "#F633FF", "#FF3333"],
+        data: []
       }
     ],
     labels: []
